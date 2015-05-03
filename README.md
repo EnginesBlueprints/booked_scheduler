@@ -1,0 +1,2 @@
+ReadMe for Engines Booked
+Booked (formerly phpScheduleIt) is a simple but powerful reserve-anything scheduler. With flexible layouts, custom rules, a powerful administrative backend, and an unbelievably simple user experience, Booked can fit almost any need. From conference rooms to lab equipment to airplanes - it's Booked
