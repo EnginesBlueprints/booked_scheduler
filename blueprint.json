@@ -36,8 +36,8 @@
       "name": "booked_scheduler",
       "framework": "apache_php",
       "memory": {
-        "required": "96",
-        "recommended": "180"
+        "required": 96,
+        "recommended": 180
       },
       "http_protocol": "https_only",
       "framework_port_override": "",
@@ -73,7 +73,10 @@
 
     ],
     "system_packages": [
-
+      {
+        "package": "mysql-client",
+        "version": ""
+      }
     ],
     "installed_packages": [
       {
