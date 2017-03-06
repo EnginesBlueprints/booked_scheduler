@@ -15,7 +15,7 @@
         "level": "rc",
         "patch": 0
       },
-      "timestamp": "2017-03-06 04:05:38 UTC"
+      "timestamp": null
     },
     "software": {
       "display": {
@@ -36,10 +36,10 @@
       "name": "booked_scheduler",
       "framework": "apache_php",
       "memory": {
-        "required": 96,
-        "recommended": 180
+        "required": "96",
+        "recommended": "180"
       },
-      "http_protocol": "http_and_https",
+      "http_protocol": "https_only",
       "framework_port_override": "",
       "deployment_type": "web",
       "web_root_directory": "",
@@ -122,7 +122,7 @@
     "environment_variables": [
       {
         "name": "admin_email",
-        "value": "Booked Admin Email",
+        "value": "",
         "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
@@ -131,7 +131,7 @@
           "type": "string",
           "label": "",
           "title": "used for admin login and password recovery",
-          "comment": "",
+          "comment": "Booked Admin Email",
           "hint": "",
           "placeholder": "",
           "validation": {
