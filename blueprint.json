@@ -36,8 +36,8 @@
       "name": "bookedscheduler",
       "framework": "apache_php",
       "memory": {
-        "required": "96",
-        "recommended": "180"
+        "required": 96,
+        "recommended": 180
       },
       "http_protocol": "https_only",
       "framework_port_override": "",
@@ -46,7 +46,7 @@
       "continuous_deployment": false,
       "install_form_comment": "",
       "first_run_url": "_Engines_Builder(http_protocol)://_Engines_Builder(fqdn)/Web/register.php",
-      "installation_report": "Please go to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)/Web/register.php\r\nRegister with the email address _Engines_Environment(admin_email)\r\ninstall password install"
+      "installation_report": "Please go to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)/Web/register.php\r\nRegister with the email address _Engines_Environment(admin_email)\r\n"
     },
     "ports": [
 
@@ -80,8 +80,8 @@
     ],
     "installed_packages": [
       {
-        "name": " booked-2.6.3.zip",
-        "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.6/booked-2.6.3.zip",
+        "name": " booked-2.6.5.zip",
+        "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.6/booked-2.6.5.zip",
         "destination": "./",
         "extraction_command": "unzip -u",
         "path_to_extracted": "booked"
