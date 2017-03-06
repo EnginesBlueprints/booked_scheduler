@@ -33,11 +33,11 @@
   },
   "software": {
     "base": {
-      "name": "booked_scheduler",
+      "name": "bookedscheduler",
       "framework": "apache_php",
       "memory": {
-        "required": 96,
-        "recommended": 180
+        "required": "96",
+        "recommended": "180"
       },
       "http_protocol": "https_only",
       "framework_port_override": "",
