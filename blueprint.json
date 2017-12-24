@@ -27,7 +27,7 @@
         "label": "GPL v2"
       }
     },
-    "timestamp": "2017-12-24T17:13:47+11:00"
+    "timestamp": "2017-12-24T17:26:12+11:00"
   },
   "software": {
     "base": {
@@ -82,7 +82,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "engine_path": "uploads",
+          "engine_path": "/home/fs/uploads",
           "permissions": "rw",
           "volume_src": " ",
           "service_name": "_Engines_Builder(engine_name)",
