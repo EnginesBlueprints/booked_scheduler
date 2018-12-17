@@ -27,7 +27,7 @@
         "label": "GPL v2"
       }
     },
-    "timestamp": "2017-12-24T17:26:12+11:00"
+    "timestamp": "2018-12-17T14:14:17+11:00"
   },
   "software": {
     "base": {
@@ -64,8 +64,9 @@
     ],
     "installed_packages": [
       {
-        "name": " booked-2.6.8.zip",
-        "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.6/booked-2.6.8.zip",
+        "name": " booked-2.7.4.zip",
+        "download_type": "http(s)",
+        "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.7/booked-2.7.4.zip",
         "destination": "./",
         "extraction_command": "unzip -u",
         "path_to_extracted": "booked"
