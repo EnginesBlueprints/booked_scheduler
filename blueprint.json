@@ -27,7 +27,7 @@
         "label": "GPL v2"
       }
     },
-    "timestamp": "2020-02-24T14:22:03+11:00"
+    "timestamp": "2020-02-24T14:25:18+11:00"
   },
   "software": {
     "base": {
@@ -64,9 +64,9 @@
     ],
     "installed_packages": [
       {
-        "name": "booked-2.7.4.zip",
+        "name": "booked-2.7.7.zip",
         "download_type": "http(s)",
-        "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.7/booked-2.7.4.zip",
+        "source_url": "https://nchc.dl.sourceforge.net/project/phpscheduleit/Booked/2.7/booked-2.7.7.zip",
         "destination": "./",
         "extraction_command": "unzip -u",
         "path_to_extracted": "booked"
