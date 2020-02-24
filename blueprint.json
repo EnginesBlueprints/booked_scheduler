@@ -27,7 +27,7 @@
         "label": "GPL v2"
       }
     },
-    "timestamp": "2018-12-17T14:38:53+11:00"
+    "timestamp": "2020-02-24T14:22:03+11:00"
   },
   "software": {
     "base": {
@@ -64,7 +64,7 @@
     ],
     "installed_packages": [
       {
-        "name": " booked-2.7.4.zip",
+        "name": "booked-2.7.4.zip",
         "download_type": "http(s)",
         "source_url": "http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.7/booked-2.7.4.zip",
         "destination": "./",
@@ -83,12 +83,14 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
+          "service_name": "uploads",
+          "volume_src": " ",
           "engine_path": "/home/fs/uploads",
           "permissions": "rw",
-          "volume_src": " ",
-          "service_name": "_Engines_Builder(engine_name)",
+          "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(group_uid)",
-          "user": "_Engines_Builder(data_uid)"
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       },
       {
@@ -101,6 +103,20 @@
           "db_password": "_Engines_System(random(10))",
           "collation": "utf8_general_ci",
           "full_access": "0"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "filesystem/local/filesystem",
+        "variables": {
+          "service_name": "config",
+          "volume_src": "",
+          "engine_path": "",
+          "permissions": "rw",
+          "user": "_Engines_Builder(cont_user_id)",
+          "group": "_Engines_Builder(data_gid)",
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       }
     ],
@@ -138,12 +154,14 @@
     ],
     "persistent_directories": [
       {
-        "path": "app/Web/uploads/"
+        "path": "app/Web/uploads/",
+        "volume_name": "uploads"
       }
     ],
     "persistent_files": [
       {
-        "path": "app/config/config.php"
+        "path": "app/config/config.php",
+        "volume_name": "config"
       }
     ]
   }
